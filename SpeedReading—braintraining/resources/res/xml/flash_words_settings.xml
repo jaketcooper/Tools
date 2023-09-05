@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.p003v7.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.p003v7.preference.ListPreference android:entries="@array/flash_words_settings_duration_entries" android:title="@string/flash_words_settings_duration_title" android:key="@string/flash_words_settings_duration_key" android:summary="@string/flash_words_settings_duration_summary" android:defaultValue="@string/flash_words_settings_duration_default_value" android:entryValues="@array/flash_words_settings_duration_entry_values"/>
+</android.support.p003v7.preference.PreferenceScreen>

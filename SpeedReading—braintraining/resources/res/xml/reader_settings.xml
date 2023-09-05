@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.p003v7.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.p003v7.preference.ListPreference android:entries="@array/reader_settings_text_size_entries" android:title="@string/reader_settings_text_size_title" android:key="@string/reader_settings_text_size_key" android:summary="@string/reader_settings_text_size_summary" android:defaultValue="@string/reader_settings_text_size_default_value" android:entryValues="@array/reader_settings_text_size_entries"/>
+</android.support.p003v7.preference.PreferenceScreen>

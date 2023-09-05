@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/bottom_menu_home_icon" android:enabled="true" android:id="@+id/action_home" android:title="@string/bottom_menu_home" xmlns:ns1="http://schemas.android.com/apk/res-auto" ns1:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/bottom_menu_reading_icon" android:enabled="true" android:id="@+id/action_reading" android:title="@string/bottom_menu_reading" xmlns:ns2="http://schemas.android.com/apk/res-auto" ns2:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/bottom_menu_training_icon" android:enabled="true" android:id="@+id/action_training" android:title="@string/bottom_menu_training" xmlns:ns3="http://schemas.android.com/apk/res-auto" ns3:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/bottom_menu_materials_icon" android:enabled="true" android:id="@+id/action_materials" android:title="@string/bottom_menu_materials" xmlns:ns4="http://schemas.android.com/apk/res-auto" ns4:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/bottom_menu_profile_icon" android:enabled="true" android:id="@+id/action_profile" android:title="@string/bottom_menu_profile" xmlns:ns5="http://schemas.android.com/apk/res-auto" ns5:showAsAction="ifRoom"/>
+</menu>

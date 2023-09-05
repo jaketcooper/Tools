@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.p003v7.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.p003v7.preference.PreferenceCategory android:title="@string/notifications">
+        <android.support.p003v7.preference.SwitchPreferenceCompat android:title="@string/notifications_settings_title" android:key="@string/notifications_settings_notify_key" android:defaultValue="@bool/notifications_settings_notify_default_value"/>
+        <com.safonov.speedreading.main.fragment.settings.TimePreference android:title="@string/notifications_settings_set_time_title" android:key="@string/notifications_settings_notify_time_key" android:dependency="@string/notifications_settings_notify_key" android:defaultValue="@integer/notifications_settings_notify_time_default_value"/>
+    </android.support.p003v7.preference.PreferenceCategory>
+</android.support.p003v7.preference.PreferenceScreen>

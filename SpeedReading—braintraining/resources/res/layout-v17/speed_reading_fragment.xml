@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/speed_reading_statistics_layout" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:layout_width="0dp" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp" xmlns:ns1="http://schemas.android.com/apk/res-auto" ns1:layout_constraintLeft_toLeftOf="0" xmlns:ns2="http://schemas.android.com/apk/res-auto" ns2:layout_constraintRight_toRightOf="0" xmlns:ns3="http://schemas.android.com/apk/res-auto" ns3:layout_constraintTop_toTopOf="@+id/speed_reading_answer_speed_text_view">
+        <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:id="@+id/speed_reading_speed_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/speed_reading_progress_bar" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="16dp" android:paddingEnd="16dp" style="?android:attr/progressBarStyleHorizontal"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/speed_reading_words_view" android:layout_width="0dp" android:layout_height="wrap_content" xmlns:ns4="http://schemas.android.com/apk/res-auto" ns4:layout_constraintBottom_toTopOf="@+id/speed_reading_answer_grid_layout" xmlns:ns5="http://schemas.android.com/apk/res-auto" ns5:layout_constraintLeft_toLeftOf="0" xmlns:ns6="http://schemas.android.com/apk/res-auto" ns6:layout_constraintRight_toRightOf="0" xmlns:ns7="http://schemas.android.com/apk/res-auto" ns7:layout_constraintTop_toBottomOf="@+id/speed_reading_statistics_layout">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="26sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center" android:id="@+id/speed_reading_word_view_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <TextView android:textSize="26sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center" android:id="@+id/speed_reading_word_view_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <TextView android:textSize="26sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center" android:id="@+id/speed_reading_word_view_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <View android:background="@color/grey" android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <View android:background="@color/grey" android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <View android:background="@color/grey" android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50dp">
+            <TextView android:textSize="26sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center" android:id="@+id/speed_reading_word_view_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <TextView android:textSize="26sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center" android:id="@+id/speed_reading_word_view_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <TextView android:textSize="26sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center" android:id="@+id/speed_reading_word_view_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <View android:background="@color/grey" android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <View android:background="@color/grey" android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <View android:background="@color/grey" android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50dp">
+            <TextView android:textSize="26sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center" android:id="@+id/speed_reading_word_view_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <TextView android:textSize="26sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center" android:id="@+id/speed_reading_word_view_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <TextView android:textSize="26sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center" android:id="@+id/speed_reading_word_view_9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <View android:background="@color/grey" android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <View android:background="@color/grey" android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <View android:background="@color/grey" android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="35sp" android:textColor="?android:attr/textColorSecondary" android:gravity="center" android:id="@+id/speed_reading_answer_speed_title_text_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/speed_reading_answer_speed_title" xmlns:ns8="http://schemas.android.com/apk/res-auto" ns8:layout_constraintBottom_toTopOf="@+id/speed_reading_answer_speed_text_view" xmlns:ns9="http://schemas.android.com/apk/res-auto" ns9:layout_constraintLeft_toLeftOf="0" xmlns:ns10="http://schemas.android.com/apk/res-auto" ns10:layout_constraintRight_toRightOf="0" xmlns:ns11="http://schemas.android.com/apk/res-auto" ns11:layout_constraintTop_toTopOf="0" xmlns:ns12="http://schemas.android.com/apk/res-auto" ns12:layout_constraintVertical_chainStyle="2"/>
+    <TextView android:textSize="45sp" android:textColor="?android:attr/textColorSecondary" android:gravity="center" android:id="@+id/speed_reading_answer_speed_text_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" xmlns:ns13="http://schemas.android.com/apk/res-auto" ns13:layout_constraintBottom_toTopOf="@+id/speed_reading_answer_grid_layout" xmlns:ns14="http://schemas.android.com/apk/res-auto" ns14:layout_constraintLeft_toLeftOf="0" xmlns:ns15="http://schemas.android.com/apk/res-auto" ns15:layout_constraintRight_toRightOf="0" xmlns:ns16="http://schemas.android.com/apk/res-auto" ns16:layout_constraintTop_toBottomOf="@+id/speed_reading_answer_speed_title_text_view"/>
+    <android.support.p003v7.widget.GridLayout android:id="@+id/speed_reading_answer_grid_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="32dp" xmlns:ns17="http://schemas.android.com/apk/res-auto" ns17:columnCount="2" xmlns:ns18="http://schemas.android.com/apk/res-auto" ns18:layout_constraintBottom_toBottomOf="0" xmlns:ns19="http://schemas.android.com/apk/res-auto" ns19:layout_constraintLeft_toLeftOf="0" xmlns:ns20="http://schemas.android.com/apk/res-auto" ns20:layout_constraintRight_toRightOf="0" xmlns:ns21="http://schemas.android.com/apk/res-auto" ns21:rowCount="3">
+        <Button android:theme="@style/SpeedReadingButtonStyle" android:id="@+id/speed_reading_answer_button_1" android:layout_width="@dimen/speed_reading_answer_button_width" android:layout_height="@dimen/speed_reading_answer_button_height"/>
+        <Button android:theme="@style/SpeedReadingButtonStyle" android:id="@+id/speed_reading_answer_button_2" android:layout_width="@dimen/speed_reading_answer_button_width" android:layout_height="@dimen/speed_reading_answer_button_height"/>
+        <Button android:theme="@style/SpeedReadingButtonStyle" android:id="@+id/speed_reading_answer_button_3" android:layout_width="@dimen/speed_reading_answer_button_width" android:layout_height="@dimen/speed_reading_answer_button_height"/>
+        <Button android:theme="@style/SpeedReadingButtonStyle" android:id="@+id/speed_reading_answer_button_4" android:layout_width="@dimen/speed_reading_answer_button_width" android:layout_height="@dimen/speed_reading_answer_button_height"/>
+        <Button android:theme="@style/SpeedReadingButtonStyle" android:id="@+id/speed_reading_answer_button_5" android:layout_width="@dimen/speed_reading_answer_button_width" android:layout_height="@dimen/speed_reading_answer_button_height"/>
+        <Button android:theme="@style/SpeedReadingButtonStyle" android:id="@+id/speed_reading_answer_button_6" android:layout_width="@dimen/speed_reading_answer_button_width" android:layout_height="@dimen/speed_reading_answer_button_height"/>
+    </android.support.p003v7.widget.GridLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fadeScrollbars="false">
+    <LinearLayout android:orientation="vertical" android:padding="24dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="@string/reader_guide_dialog_default_reading_title" style="@style/TextAppearance.AppCompat.Title"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/reader_guide_dialog_default_reading_message" style="@style/TextAppearance.AppCompat.Subhead"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+            <TextView android:textSize="12sp" android:textColor="?android:attr/textColorSecondary" android:gravity="center_horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/reader_guide_dialog_previous_page_description" android:drawableTop="@drawable/reader_guide_previous_icon" android:drawablePadding="8dp" android:layout_weight="1"/>
+            <TextView android:textSize="12sp" android:textColor="?android:attr/textColorSecondary" android:gravity="center_horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginRight="4dp" android:text="@string/reader_guide_dialog_default_reading_center_description" android:drawableTop="@drawable/reader_guide_expand_icon" android:drawablePadding="8dp" android:layout_weight="1"/>
+            <TextView android:textSize="12sp" android:textColor="?android:attr/textColorSecondary" android:gravity="center_horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/reader_guide_dialog_next_page_description" android:drawableTop="@drawable/reader_guide_next_icon" android:drawablePadding="8dp" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#82c8b1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="center" android:layout_width="150dp" android:layout_height="150dp" android:layout_marginTop="20dp" android:src="@drawable/ad_russian_icon"/>
+    <LinearLayout android:orientation="vertical" android:padding="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/white" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Желаете повысить свою грамотность?" style="@style/TextAppearance.AppCompat.Title"/>
+        <TextView android:textColor="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Приложение поможет Вам обучиться основам орфографии русского языка. Предназначено как для взрослых, так и для детей. Весь курс разбит на главы и правила." style="@style/TextAppearance.AppCompat.Subhead"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="end" android:layout_gravity="end" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:layout_marginBottom="8dp">
+        <Button android:textColor="@color/white" android:id="@+id/show_market_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Попробовать" style="@style/Widget.AppCompat.Button.Borderless"/>
+        <Button android:textColor="@color/white" android:id="@+id/close_dialog_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Нет, спасибо" style="@style/Widget.AppCompat.Button.Borderless"/>
+    </LinearLayout>
+</LinearLayout>

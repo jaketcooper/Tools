@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:textSize="20sp" android:textColor="?android:attr/textColorSecondary" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/speed_reading_result_max_speed"/>
+        <TextView android:textSize="26sp" android:textColor="?android:attr/textColorPrimary" android:id="@+id/max_speed_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/result_new_best_small" android:drawablePadding="8dp" android:drawableEnd="@drawable/result_new_best_small"/>
+        <TextView android:textSize="16sp" android:id="@+id/pass_course_score_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:drawableRight="@drawable/pass_course_star_icon" android:drawablePadding="8dp" android:drawableEnd="@drawable/pass_course_star_icon" xmlns:ns1="http://schemas.android.com/apk/res-auto" ns1:layout_constraintLeft_toLeftOf="@+id/time_text_view" xmlns:ns2="http://schemas.android.com/apk/res-auto" ns2:layout_constraintTop_toBottomOf="@+id/time_text_view"/>
+        <TextView android:textSize="20sp" android:textColor="?android:attr/textColorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/speed_reading_result_best_max_speed"/>
+        <TextView android:textSize="26sp" android:textColor="?android:attr/textColorPrimary" android:id="@+id/best_max_speed_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:textSize="20sp" android:textColor="?android:attr/textColorSecondary" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/speed_reading_result_average_speed"/>
+        <TextView android:textSize="26sp" android:textColor="?android:attr/textColorPrimary" android:id="@+id/average_speed_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/result_new_best_small" android:drawablePadding="8dp" android:drawableEnd="@drawable/result_new_best_small"/>
+        <TextView android:textSize="20sp" android:textColor="?android:attr/textColorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/speed_reading_result_best_average_speed"/>
+        <TextView android:textSize="26sp" android:textColor="?android:attr/textColorPrimary" android:id="@+id/best_average_speed_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button android:theme="@style/AccentButtonStyle" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/next_button" android:layout_width="150dp" android:layout_height="wrap_content" android:layout_marginBottom="32dp" android:text="@string/pass_course_next"/>
+</LinearLayout>

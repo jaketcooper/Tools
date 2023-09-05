@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/activity_horizontal_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="26sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center" android:paddingTop="8dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/main_menu_description_title_1"/>
+            <TextView android:textSize="16sp" android:textColor="@color/grey" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/main_menu_description_message_1"/>
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/main_menu_description_training_description"/>
+            <TextView android:textSize="26sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center" android:paddingTop="8dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/main_menu_description_title_2"/>
+            <TextView android:textSize="16sp" android:textColor="?android:attr/textColorSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/main_menu_description_message_2_part_1"/>
+            <TextView android:textSize="16sp" android:textColor="?android:attr/textColorSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/main_menu_description_message_2_part_2"/>
+            <TextView android:textSize="26sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center" android:paddingTop="8dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/main_menu_description_title_4"/>
+            <TextView android:textSize="16sp" android:textColor="?android:attr/textColorSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/main_menu_description_message_4"/>
+            <TextView android:textSize="26sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center" android:paddingTop="8dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/main_menu_description_title_5"/>
+            <TextView android:textSize="16sp" android:textColor="?android:attr/textColorSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/main_menu_description_message_5"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.gms.ads.AdView android:id="@+id/ad_view" android:layout_width="match_parent" android:layout_height="wrap_content" xmlns:ns1="http://schemas.android.com/apk/res-auto" ns1:adSize="SMART_BANNER" xmlns:ns2="http://schemas.android.com/apk/res-auto" ns2:adUnitId="@string/banner_advertisement_id"/>
+</LinearLayout>

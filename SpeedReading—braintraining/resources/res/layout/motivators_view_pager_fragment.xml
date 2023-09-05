@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="300dp" android:layout_height="match_parent" android:layout_marginTop="8dp" android:layout_marginBottom="8dp">
+        <ImageView android:id="@+id/imageView" android:layout_width="match_parent" android:layout_height="120dp" android:layout_marginTop="8dp" android:src="@drawable/motivators_top_banner"/>
+        <TextView android:textSize="26sp" android:textStyle="bold" android:textColor="@color/colorWhiteText" android:gravity="center" android:background="@drawable/button_shape" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/motivators_title"/>
+        <TextView android:textSize="16sp" android:textColor="@color/colorWhiteText" android:gravity="center" android:id="@+id/motivators_message_text_view" android:background="@color/colorMain" android:paddingLeft="8dp" android:paddingRight="8dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:src="@drawable/motivators_bottom_banner"/>
+    </LinearLayout>
+</LinearLayout>

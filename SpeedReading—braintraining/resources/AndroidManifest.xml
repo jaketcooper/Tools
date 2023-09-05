@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="63" android:versionName="3.2.0" package="com.speedreading.alexander.speedreading">
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="26"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.QUICKBOOT_POWERON"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission android:name="com.speedreading.alexander.speedreading.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.speedreading.alexander.speedreading.permission.C2D_MESSAGE"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:name="com.safonov.speedreading.application.App" android:allowBackup="true" android:supportsRtl="true">
+        <meta-data android:name="google_analytics_adid_collection_enabled" android:value="false"/>
+        <meta-data android:name="firebase_analytics_collection_enabled" android:value="false"/>
+        <meta-data android:name="firebase_analytics_collection_deactivated" android:value="true"/>
+        <activity android:name="com.safonov.speedreading.main.activity.view.MenuActivity" android:launchMode="singleTop" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.safonov.speedreading.training.activity.view.TrainingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.safonov.speedreading.reader.library.activity.view.LibraryActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <receiver android:name="com.safonov.speedreading.application.notifications.BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.REBOOT"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.safonov.speedreading.application.notifications.NotificationStarterService"/>
+        <service android:name="com.safonov.speedreading.application.notifications.AlarmHandleService"/>
+        <activity android:name="com.safonov.speedreading.reader.reader.view.ReaderActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:parentActivityName="com.safonov.speedreading.reader.library.activity.view.LibraryActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".reader.library.activity.view.LibraryActivity"/>
+        </activity>
+        <activity android:name="com.safonov.speedreading.reader.reader.settings.ReaderSettingsActivity" android:screenOrientation="portrait" android:parentActivityName="com.safonov.speedreading.reader.reader.view.ReaderActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".reader.reader.view.ReaderActivity"/>
+        </activity>
+        <activity android:name="com.safonov.speedreading.purchase.view.PurchaseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.safonov.speedreading.purchase.view.PurchaseBookActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.google.android.gms.ads.AdActivity" android:exported="false" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.speedreading.alexander.speedreading"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.firebase.iid.FirebaseInstanceIdService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.speedreading.alexander.speedreading.firebaseinitprovider" android:initOrder="100"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT"/>
+    </application>
+</manifest>

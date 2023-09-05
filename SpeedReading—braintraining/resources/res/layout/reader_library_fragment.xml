@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout android:layout_width="0dp" android:layout_height="wrap_content" xmlns:ns1="http://schemas.android.com/apk/res-auto" ns1:layout_constraintLeft_toLeftOf="0" xmlns:ns2="http://schemas.android.com/apk/res-auto" ns2:layout_constraintRight_toRightOf="0" xmlns:ns3="http://schemas.android.com/apk/res-auto" ns3:layout_constraintTop_toTopOf="0">
+        <android.support.p003v7.widget.Toolbar android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" xmlns:ns4="http://schemas.android.com/apk/res-auto" ns4:layout_scrollFlags="15" xmlns:ns5="http://schemas.android.com/apk/res-auto" ns5:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+        <android.support.design.widget.TabLayout android:id="@+id/tab_layout" android:layout_width="match_parent" android:layout_height="wrap_content" xmlns:ns6="http://schemas.android.com/apk/res-auto" ns6:tabGravity="0" xmlns:ns7="http://schemas.android.com/apk/res-auto" ns7:tabMode="1"/>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.p000v4.view.ViewPager android:id="@+id/view_pager" android:layout_width="0dp" android:layout_height="0dp" xmlns:ns8="http://schemas.android.com/apk/res-auto" ns8:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+</android.support.constraint.ConstraintLayout>

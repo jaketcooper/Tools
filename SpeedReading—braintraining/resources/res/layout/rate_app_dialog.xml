@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:padding="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/rate_app_dialog_title" style="@style/TextAppearance.AppCompat.Title"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/rate_app_dialog_message" style="@style/TextAppearance.AppCompat.Subhead"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="end" android:layout_gravity="end" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp">
+        <Button android:textColor="@color/colorAccent" android:id="@+id/rate_app_dialog_rate_now" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rate_app_dialog_rate_now" style="@style/Widget.AppCompat.Button.Borderless"/>
+        <Button android:textColor="@color/colorAccent" android:id="@+id/rate_app_dialog_dont_show_again" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rate_app_dialog_dont_show_again" style="@style/Widget.AppCompat.Button.Borderless"/>
+        <Button android:textColor="@color/colorAccent" android:id="@+id/rate_app_dialog_remind_me_later" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rate_app_dialog_remind_me_later" style="@style/Widget.AppCompat.Button.Borderless"/>
+    </LinearLayout>
+</LinearLayout>

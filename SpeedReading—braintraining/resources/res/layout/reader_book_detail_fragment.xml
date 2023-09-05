@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape" android:padding="4dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_margin="12dp" android:layout_weight="1">
+        <ImageView android:layout_gravity="center" android:id="@+id/book_cover_image_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="30dp" android:layout_marginBottom="30dp" android:src="@drawable/reader_book_without_title" android:scaleType="centerInside" android:layout_weight="1"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/colorWhiteText" android:layout_width="match_parent" android:layout_height="1px"/>
+            <LinearLayout android:orientation="vertical" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin">
+                <TextView android:textSize="14sp" android:textColor="@color/colorWhiteText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/book_detail_title"/>
+                <TextView android:textSize="16sp" android:textColor="@color/colorWhiteText" android:ellipsize="marquee" android:id="@+id/title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/author_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/colorWhiteText" android:layout_width="match_parent" android:layout_height="1px"/>
+            <LinearLayout android:orientation="vertical" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin">
+                <TextView android:textSize="14sp" android:textColor="@color/colorWhiteText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/book_detail_author"/>
+                <TextView android:textSize="16sp" android:textColor="@color/colorWhiteText" android:ellipsize="marquee" android:id="@+id/author_text_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/language_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/colorWhiteText" android:layout_width="match_parent" android:layout_height="1px"/>
+            <LinearLayout android:orientation="vertical" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin">
+                <TextView android:textSize="14sp" android:textColor="@color/colorWhiteText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/book_detail_language"/>
+                <TextView android:textSize="16sp" android:textColor="@color/colorWhiteText" android:id="@+id/language_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/colorWhiteText" android:layout_width="match_parent" android:layout_height="1px"/>
+            <LinearLayout android:orientation="vertical" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin">
+                <TextView android:textSize="14sp" android:textColor="@color/colorWhiteText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/book_detail_file_path"/>
+                <TextView android:textSize="16sp" android:textColor="@color/colorWhiteText" android:ellipsize="marquee" android:id="@+id/file_path_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:theme="@style/AccentButtonStyle" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/start_reading_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="32dp" android:src="@drawable/training_start_icon" android:text="@string/description_start"/>
+</LinearLayout>

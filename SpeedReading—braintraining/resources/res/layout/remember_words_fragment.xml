@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="@color/colorWhiteText" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/focus_attention_statistics" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:id="@+id/focus_attention_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp"/>
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/focus_attention_progress" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="?android:attr/progressBarStyleHorizontal"/>
+        <TextView android:textSize="16sp" android:id="@+id/focus_attention_record" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp"/>
+    </LinearLayout>
+    <TableLayout android:id="@+id/words_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/answer_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <TextView android:textSize="24sp" android:textStyle="bold" android:id="@+id/points_text_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:text="+4" android:layout_above="@+id/horizontalScrollView" android:layout_centerHorizontal="true"/>
+            <HorizontalScrollView android:id="@+id/horizontalScrollView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:fillViewport="true" android:layout_centerVertical="true">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/answerLineContainer" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </HorizontalScrollView>
+        </RelativeLayout>
+        <ScrollView android:id="@+id/scrollView" android:layout_width="match_parent" android:layout_height="0dp" android:fillViewport="true" android:layout_weight="1" android:scrollbarFadeDuration="0">
+            <TableLayout android:id="@+id/tableLayout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
