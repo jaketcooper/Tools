@@ -1,4 +1,7 @@
 {
     "gitdoc.enabled": true,
-    "gaac.forceLowerCase": true
+    "gaac.forceLowerCase": true,
+    "cSpell.words": [
+        "Speedreading"
+    ]
 }
