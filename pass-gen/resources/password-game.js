@@ -264,7 +264,7 @@
           })) || []
         );
       }
-      var F = [
+      var ruleList = [
           {
             desc: "Your password must be at least 5 characters.",
             test: function (e, t) {
@@ -3252,7 +3252,7 @@
             { type: Number, required: !0 }
           ),
           data: function () {
-            return { rules: F };
+            return { rules: ruleList };
           },
         },
         de =
@@ -4565,7 +4565,7 @@
           props: { value: { type: String, default: "" } },
           data: function () {
             return {
-              rules: F,
+              rules: ruleList,
               rulesOrder: [],
               password: "",
               currRuleIndex: 0,
